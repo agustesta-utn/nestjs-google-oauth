@@ -1,0 +1,14 @@
+@baseUrl = http://localhost:3000
+@token = PEGAR_JWT_RECIBIDO
+
+### Iniciar OAuth en el navegador: http://localhost:3000/auth/google
+### Sin token: 401
+GET {{baseUrl}}/auth/profile
+
+### Con token: 200 y perfil del usuario
+GET {{baseUrl}}/auth/profile
+Authorization: Bearer {{token}}
+
+### Token inválido: 401
+GET {{baseUrl}}/auth/profile
+Authorization: Bearer invalido

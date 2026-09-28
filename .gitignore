@@ -1,0 +1,23 @@
+# Dependencias y archivos generados
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Credenciales locales (el ejemplo sin secretos sí se entrega)
+.env
+.env.*
+!.env.example
+client_secret*.json
+credentials.json
+*.pem
+*.key
+
+# Logs y archivos del sistema
+*.log
+.DS_Store
+Thumbs.db
+
+# Material personal de estudio, innecesario para la entrega
+GUIA_PASO_A_PASO.md
+REVISION_FINAL.md
